@@ -1,0 +1,13 @@
+from datetime import date
+atual = date.today().year
+nascimento = int(input('Ano de nascimento: '))
+print(f'Quem nasceu em {nascimento} tem {atual-nascimento} anos de idade em {atual}')
+if atual-nascimento < 18:
+    print(f'Ainda faltam {18-(atual-nascimento)} anos para o alistamento!')
+    anoa = atual+18-(atual-nascimento)
+    print(f'Seu alistamento será em {anoa}')
+elif atual-nascimento == 18:
+    print('Esta na hora exata de se alistar')
+elif atual-nascimento > 18:
+    anob = (atual-nascimento)-18
+    print(f'Ja se passaram {anob} anos do prazo do alistamento.')
