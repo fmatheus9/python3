@@ -1,0 +1,8 @@
+a = float(input('Valor a: '))
+b = float(input('Valor b: '))
+c = float(input('Valor c: '))
+print('É possível formar um triângulo com esses valores? ')
+if a < b + c:
+    print(f'Sim, é possível formar um triângulo com os valores {a, b, c} ')
+else:
+    print(f'Não é possível formar um triâmgulo com esses valores pois às medidas não satsfazem a operação: a < b + c')
