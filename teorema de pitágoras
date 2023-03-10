@@ -1,0 +1,11 @@
+import math
+
+x = float(input('Valor cateto oposto: '))
+y = float(input('Valor cateto adjacente: '))
+a = math.pow(x,2) + math.pow(y,2)
+print(f'O valor da hipotenusa é: {math.sqrt(a)}')
+
+co = float(input('Valor cateto oposto: '))
+ca = float(input('Valor cateto adjacente: '))
+hi = math.hypot(co,ca)
+print(f'O valor da hipotenusa é: {hi:.2}')
