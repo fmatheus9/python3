@@ -1,0 +1,16 @@
+x = float(input('Preço das compras R$: '))
+y = int(input('''FORMAS DE PAGAMENTO
+[ 1 ] à vista dinheiro/cheque 
+[ 2 ] à vista no cartão
+[ 3 ] 2x no cartão 
+[ 4 ] 3x ou mais no cartão
+Qual é a opção? '''))
+if y == 1:
+    print(f'Sua compra é de {x}R$ vai custar {x-(x/100)*10}R$ com o desconto de 10%.')
+elif y == 2:
+    print(f'Sua compra é de {x}R$ vai custar {x-(x/100)*5}R$ com o desconto de 5%.')
+elif y == 3:
+    print(f'Sua compra é de {x}R$ vai custar {x}R$ pois não tem nenhum desconto. :)')
+else:
+    print(f'Sua compra é de {x}R$ vai custar {x+(x/100)*20}R$ ')
+    
