@@ -1,0 +1,13 @@
+n1 = int(input('Pirmeiro valor: '))
+n2= int(input('Segundo valor: '))
+n3 = int(input('Terceiro valor: '))
+if n1 + n2 > n3 or n2 + n3 > n1 or n1 + n3 > n2:
+    print(' É possivel formar um triângulo')
+    if n1 == n2 == n3:
+        print('Os valores acima poder formar um triângulo EQUILÁTERO')
+    elif n1 != n2 != n3:
+        print('Os valores acima poder formar um triângulo ESCALENO')
+    elif n1 == n2 != n3 or n2 == n3 != n1 or n1 == n3 != n2:
+        print('Os valores acima poder formar um triângulo ISÓSCELES')
+else:
+    print('Os valore não podem formar um triângulo')
