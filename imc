@@ -1,0 +1,14 @@
+kg = float(input('Peso(Kg): '))
+m = float(input('Altura(m): '))
+imc = kg/(m**2)
+print(f'Seu IMC é igual a {m}')
+if imc < float(18.5):
+    print('Abaixo do Peso')
+elif imc > float(18.5) and imc < 25:
+    print('Peso Ideal')
+elif imc > 25 and imc < 30:
+    print('Sobrepeso')
+elif imc > 30 and imc < 40:
+    print('Obesidade')
+else:
+    print('Obesidade Mórbida')
