@@ -1,0 +1,12 @@
+x = int(input('Digite um número inteiro: '))
+print('''Escolha uma das bases para a converção do número:
+[ 1 ] BINÁRIO:
+[ 2 ] OCTAL:
+[ 3 ] HEXADECIMMAL:''')
+y = int(input('Opção: '))
+if y == 1:
+    print(f'O numero {x} convertido para a base binária é igual a {bin(x)[2:]}')
+elif y == 2:
+    print(f'O numero {x} convertido para a base octal é igual a {oct(x)}{2:}')
+elif y == 3:
+    print(f'O numero {x} convertido para a base hexadecimal é igual a {hex(x)[2:]}[')
