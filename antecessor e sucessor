@@ -1,0 +1,3 @@
+x = int(input('Digite um numero: '))
+print(f'Seu antecessor é: {x-1}')
+print(f'Seu sucessor é: {x+1}')
