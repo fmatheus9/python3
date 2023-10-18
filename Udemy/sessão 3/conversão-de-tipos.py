@@ -1,0 +1,5 @@
+print(1+2)
+print('1'+'2')
+print('1', type('1'))
+print(1, type(1))
+print(int('1'), type(int('1'))) 
