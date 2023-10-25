@@ -31,3 +31,10 @@ print(lista)
 
 lista.clear() #limpa a lista
 print(lista)
+
+listaA = [1,2,3,4]
+listaB = [5,6,7,8]
+listaC = listaA+listaB
+print(listaC)
+listaA.extend(listaB) # extende a lista A
+print(listaA)
