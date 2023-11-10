@@ -17,5 +17,5 @@ def palindromo(palavra):
         print("É um palíndromo.")
     else:
         print("Não é um palíndromo.")
-palavra = str(input("Digite uma palavra: "))
+palavra = str(input("Digite uma algo: ")).lower()
 palindromo(palavra)

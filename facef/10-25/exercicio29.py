@@ -18,13 +18,17 @@ passado como parâmetro e retornar o resultado.
 def tabuada(x):
     resultado = []
     if x > 9 or x < 1:
-        print('Valor inválido\n')
+        print('Valor inválido')
+        print("=======================================")
     else:
         for i in range(10):
             print(f"{i+1} x {x} = {x*(i+1)}")
-        print("\n")
+        print("=======================================")
+        
 
 def imc(peso, altura):
+    if altura > 2.2:
+        altura = altura / 100
     resultado = peso / (altura*altura)
     return resultado
         
@@ -36,19 +40,23 @@ def fatorial(f):
 
 
 condicao = True 
+print("MENU DE OPÇÕES:")
 while condicao: 
-    n = int(input("1-Escrever a tabuada de um número.\n2-Calcular o Índice de Massa Corporal (IMC).\n3-Calcular o fatorial de um número.\n-1-Encerra o programa.\n--> "))
+    n = int(input("[1] Escrever a tabuada de um número.\n[2] Calcular o Índice de Massa Corporal (IMC).\n[3] Calcular o fatorial de um número.\n[-1] Encerra o programa.\n= "))
     if n == 1: 
-        x = int(input("Informe um valor: "))
+        x = int(input("Informe um valor (1 a 9): "))
         tabuada(x)
     elif n == 2:
         peso = float(input("Informe o peso: "))
-        altura = float(input("Informe a altura em metros: "))
+        altura = float(input("Informe a altura: "))
         resultado = imc(peso, altura)
-        print(f"IMC: {imc:.2f}kg/m2\n")
-        f = int(input("\nInforme o valor: "))
+        print(f"IMC: {resultado:.2f}kg/m2")
+        print("=======================================")
+    elif n == 3:
+        f = int(input("Informe o valor: "))
         fa = fatorial(f)
-        print(f"O fatorial de {f} = {fa}\n<3")
+        print(f"O fatorial de {f} = {fa}")
+        print("=======================================")
     elif n == -1:
         print("Fim do sistema.")
         condicao = False
