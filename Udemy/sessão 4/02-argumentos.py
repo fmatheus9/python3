@@ -8,6 +8,6 @@ def soma(x, y):
     print(f'{x=} {y=} | x + y = {x+y}')
 
 
-soma(1, 2) # ---> Argumentos 1 e 2
-soma(x = 2, y = 1)
+soma(1, 2) # ---> Argumentos '1' e '2'.
+soma(x = 2, y = 1) # ---> Argumento nomeado. 
 
