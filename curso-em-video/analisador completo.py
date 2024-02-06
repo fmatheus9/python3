@@ -10,10 +10,11 @@ for c in range(4):
     print(f'============{c+1}ª Pessoa============')
     nome = input(f'Informe o nome {c+1}: ')
     idade = int(input(f'Informe a idade {c+1}: '))
-    sexo = input(f'Informe o sexo (M/F): ')
+    sexo = input(f'Informe o sexo (M/F): ').upper()
 
     media = media + idade
     if idade > idade_mais_velho and sexo == 'M':
+        idade_mais_velho = idade
         nome_mais_velho = nome
 
     if sexo == 'F' and idade < 20:
