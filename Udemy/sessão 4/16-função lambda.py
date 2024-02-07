@@ -4,6 +4,7 @@
 # que contém apenas uma linha. Ou seja, tudo
 # deve ser contido dentro de uma única
 # expressão.
+# lambda arguments : expression <-----------------------------------------------------------------
 # lista = [
 #     {'nome': 'Luiz', 'sobrenome': 'miranda'},
 #     {'nome': 'Maria', 'sobrenome': 'Oliveira'},
