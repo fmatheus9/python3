@@ -9,5 +9,7 @@ try:
     print("Linha 2") #não mostra essa linha pois houve um erro na linha anterior
 except ZeroDivisionError: #é importante colocar o nome do erro na exceção
     print("Dividiu por 0")
-
+finally:
+    #sempre é executado 
+    print("Finalizado")
 print('Continuar')
